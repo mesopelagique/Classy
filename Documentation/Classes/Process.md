@@ -6,6 +6,12 @@
 $process:=classy.Process.new(<process id>)
 ```
 
+or current process
+
+```4d
+$process:=classy.Process.new()
+```
+
 ## Functions
 
 ### Flow
@@ -42,6 +48,10 @@ $process.properties()
 
 ```4d
 $process.name()
+```
+
+```4d
+$bool:=process.isCurrent()
 ```
 
 ### User Interface
