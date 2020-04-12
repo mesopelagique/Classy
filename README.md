@@ -1,4 +1,4 @@
-﻿# Classy 🎩
+# Classy 🎩
 Classy code using `Class`
 
 - [classy.Process](Documentation/Classes/Process.md)
@@ -11,9 +11,10 @@ Classy code using `Class`
 ## Example
 
 ```4d
-🎩:=classy 
+$🎩:=classy 
+$⚙️:=$🎩.Process
 
-$process:=🎩.Process.new(1)
+$process:=$⚙️.new(1)
 
 $process.delay(10)
 
