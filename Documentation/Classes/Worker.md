@@ -2,5 +2,13 @@
 ## Constructor
 
 ```4d
-$process:=classy.Worker.new(<name>)
+$worker:=classy.Worker.new(<name>)
+```
+
+## Functions
+
+### Kill
+
+```4d
+$workers.kill()
 ```

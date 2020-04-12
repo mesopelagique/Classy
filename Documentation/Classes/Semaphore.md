@@ -3,5 +3,5 @@
 ## Constructor
 
 ```4d
-$process:=classy.Semaphore.new(<name>)
+$semaphore:=classy.Semaphore.new(<name>)
 ```
