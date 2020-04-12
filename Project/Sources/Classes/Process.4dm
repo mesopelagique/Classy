@@ -28,6 +28,18 @@ https://doc.4d.com/4Dv17/4D/17.4/RESUME-PROCESS.301-4882772.en.html
 Function resume
 	RESUME PROCESS:C320(This:C1470.id)
 	
+/*
+Wait until this process finish from an other process.
+/!\ do not call it from same process.
+*/
+Function wait
+	ASSERT:C1129(Current process:C322#This:C1470.id)
+	Repeat 
+		
+		DELAY PROCESS:C323(Current process:C322;60)
+		
+	Until (Process state:C330(This:C1470.id)=Aborted:K13:1)
+	
 Function name
 	C_TEXT:C284($0)
 	C_TEXT:C284($vName)
@@ -35,6 +47,10 @@ Function name
 	C_LONGINT:C283($vTime)
 	PROCESS PROPERTIES:C336(This:C1470.id;$vName;$vState;$vTime)
 	$0:=$vName
+	
+Function isCurrent
+	C_BOOLEAN:C305($0)
+	$0:=Current process:C322=This:C1470.id
 	
 /*
 https://doc.4d.com/4Dv17/4D/17.4/PROCESS-PROPERTIES.301-4882760.en.html

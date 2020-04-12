@@ -5,6 +5,7 @@ Classy code using Class
 - [classy.Semaphore](Documentation/Classes/Semaphore.md)
 - [classy.Worker](Documentation/Classes/Worker.md)
 - [classy.Pasteboard](Documentation/Classes/Pasteboard.md)
+- [classy.WebArea](Documentation/Classes/WebArea.md)
 
 
 ```4d
