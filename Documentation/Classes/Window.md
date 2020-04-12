@@ -16,16 +16,16 @@ $window:=classy.Window.new()
 ### Properties
 #### Title
 ```4d
-$window.getTitle()
+$title:=$window.getTitle()
 ```
 
 ```4d
-$window.setTitle()
+$window.setTitle("a new title")
 ```
 #### Kind
 
 ```4d
-$window.kind()
+$kind:=$window.kind()
 ```
 
 #### Edge
