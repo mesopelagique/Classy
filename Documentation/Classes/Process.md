@@ -51,7 +51,7 @@ $process.name()
 ```
 
 ```4d
-$bool:=process.isCurrent()
+$bool:=$process.isCurrent()
 ```
 
 ### User Interface
