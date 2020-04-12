@@ -1,6 +1,17 @@
 Class constructor
-	C_LONGINT:C283($1)
-	This:C1470.id:=$1
+	C_VARIANT:C1683($1)
+	If (Count parameters:C259>1)
+		Case of 
+			: (Value type:C1509($1)=Is longint:K8:6)
+				This:C1470.id:=$1
+			: (Value type:C1509($1)=Is text:K8:3)
+				This:C1470.id:=Process number:C372($1)
+			Else 
+				ASSERT:C1129(False:C215;"Wront type for process")
+		End case 
+	Else 
+		This:C1470.id:=Current process:C322
+	End if 
 	
 /*
 https://doc.4d.com/4Dv17/4D/17.4/Process-state.301-4882769.en.html
@@ -80,15 +91,6 @@ Function bringToFront
 	BRING TO FRONT:C326(This:C1470.id)
 	
 	  // Static
-	
-Function static_current
-	C_OBJECT:C1216($0)
-	$0:=cs:C1710.Process.new(Current process:C322)
-	
-Function static_fromName
-	C_OBJECT:C1216($0)
-	C_TEXT:C284($1)
-	$0:=cs:C1710.Process.new(Process number:C372($1))
 	
 Function static_frontmost
 	C_OBJECT:C1216($0)
