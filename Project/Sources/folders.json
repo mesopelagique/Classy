@@ -1,16 +1,4 @@
 ﻿{
-	"(Default Classes)": {},
-	"(Default Folder)": {
-		"groups": [
-			"(Default Classes)",
-			"(Default Forms)",
-			"(Default Project Methods)",
-			"(Default Tables)"
-		]
-	},
-	"(Default Forms)": {},
-	"(Default Project Methods)": {},
-	"(Default Tables)": {},
 	"Communication": {
 		"classes": [
 			"Semaphore",
@@ -30,9 +18,10 @@
 			"test_csfy"
 		]
 	},
-	"trash": {
-		"groups": [
-			"(Default Folder)"
+	"utils": {
+		"methods": [
+			"namify"
 		]
-	}
+	},
+	"trash": {}
 }
