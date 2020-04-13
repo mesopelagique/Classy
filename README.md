@@ -1,4 +1,7 @@
 ﻿# Classy 🎩
+ 
+[![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url]
+
 Classy code using `Class`
 
 - [⚙️ classy.Process](Documentation/Classes/Process.md)
@@ -20,3 +23,14 @@ $process.delay(10)
 
 $process.kill()
 ```
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
+[code-top]: https://img.shields.io/github/languages/top/mesopelagique/Classy.svg
+[code-size]: https://img.shields.io/github/languages/code-size/mesopelagique/Classy.svg
+[code-url]: https://developer.4d.com/
+[release-shield]: https://img.shields.io/github/v/release/mesopelagique/Classy
+[release-url]: https://github.com/mesopelagique/Classy/releases/latest
+[license-shield]: https://img.shields.io/github/license/mesopelagique/Classy
+[license-url]: LICENSE.md
