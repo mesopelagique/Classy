@@ -20,6 +20,8 @@
 	},
 	"utils": {
 		"methods": [
+			"callOnInstance",
+			"Compiler_Methods",
 			"namify"
 		]
 	},

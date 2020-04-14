@@ -7,7 +7,7 @@ Class constructor
 			: (Value type:C1509($1)=Is text:K8:3)
 				This:C1470.id:=Process number:C372($1)
 			Else 
-				ASSERT:C1129(False:C215;"Wront type for process")
+				ASSERT:C1129(False:C215;"Wrong type for process")
 		End case 
 	Else 
 		This:C1470.id:=Current process:C322

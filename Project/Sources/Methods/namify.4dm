@@ -3,7 +3,7 @@ C_OBJECT:C1216($1)
 C_TEXT:C284($0)
   //ASSERT(OB Instance of($1;4D.Class))
 Use ($1)
-	If ($1.cpt=0)
+	If ($1.cpt=Null:C1517)
 		$1.cpt:=0
 	Else 
 		$1.cpt:=$1.cpt+1
