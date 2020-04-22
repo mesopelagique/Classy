@@ -18,4 +18,3 @@ $worker.call($process;"delay";10)
   //$worker.call($process.staticFunction;10) // work only if no This because no instance
 
 $worker.call($worker;"kill")  // auto kill worker
-

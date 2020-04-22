@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 C_OBJECT:C1216($1)  // instance or function
 C_VARIANT:C1683(${2})  // parameters
 

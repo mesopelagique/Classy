@@ -5,6 +5,18 @@
 			"Worker"
 		]
 	},
+	"Network": {
+		"classes": [
+			"Request",
+			"Response"
+		]
+	},
+	"New": {
+		"methods": [
+			"New string",
+			"New window"
+		]
+	},
 	"Process": {
 		"groups": [
 			"Communication"
@@ -15,13 +27,16 @@
 	},
 	"test": {
 		"methods": [
-			"test_csfy"
+			"test_classy",
+			"test_request"
 		]
 	},
 	"utils": {
 		"methods": [
 			"callOnInstance",
+			"catchError",
 			"Compiler_Methods",
+			"Compiler_Variables",
 			"namify"
 		]
 	},

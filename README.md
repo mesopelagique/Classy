@@ -10,6 +10,7 @@ Classy code using `Class`
 - [📋 classy.Pasteboard](Documentation/Classes/Pasteboard.md)
 - [🌐 classy.WebArea](Documentation/Classes/WebArea.md)
 - [🖼️ classy.Window](Documentation/Classes/Window.md)
+- [🔤 classy.String](Documentation/Classes/String.md)
 
 ## Example
 
