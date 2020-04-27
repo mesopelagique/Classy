@@ -13,8 +13,8 @@
 	},
 	"New": {
 		"methods": [
-			"New string",
-			"New window"
+			"Get window",
+			"New string"
 		]
 	},
 	"Process": {
@@ -38,6 +38,12 @@
 			"Compiler_Methods",
 			"Compiler_Variables",
 			"namify"
+		]
+	},
+	"Wrapper": {
+		"classes": [
+			"Numeric",
+			"String"
 		]
 	},
 	"trash": {}
