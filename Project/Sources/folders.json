@@ -39,7 +39,7 @@
 			"catchError",
 			"Compiler_Methods",
 			"Compiler_Variables",
-			"GET ENVIRONMENT VARIABLE",
+			"GET ENVIRONMENT VARIABLES",
 			"namify",
 			"ParseEnv"
 		]

@@ -4,7 +4,7 @@ Class constructor
 Function refresh
 	C_TEXT:C284($key)
 	C_OBJECT:C1216($env)
-	$env:=GET ENVIRONMENT VARIABLE 
+	$env:=GET ENVIRONMENT VARIABLES 
 	For each ($key;$env)
 		This:C1470[$key]:=$env[$key]
 	End for each 

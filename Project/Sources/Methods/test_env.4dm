@@ -12,13 +12,13 @@ ASSERT:C1129($env[$testKey]=Null:C1517;"Must not found test key")
 $env.set($testKey;"value")
 ASSERT:C1129($env[$testKey]="value";"Must found test key")
 
-$upToDate:=GET ENVIRONMENT VARIABLE 
+$upToDate:=GET ENVIRONMENT VARIABLES 
 ASSERT:C1129($upToDate[$testKey]="value";"Must found test key in real env")
 
 $obj:=New object:C1471("randomKey";Generate UUID:C1066)
 $env.load($obj)
 ASSERT:C1129($env.randomKey=$obj.randomKey;"Must found randomKey")
 
-$upToDate:=GET ENVIRONMENT VARIABLE 
+$upToDate:=GET ENVIRONMENT VARIABLES 
 ASSERT:C1129($upToDate.randomKey=$obj.randomKey;"Must found randomKey in real env")
 
