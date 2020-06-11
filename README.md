@@ -16,8 +16,7 @@ Classy code using `Class`
 ## Example
 
 ```4d
-$🎩:=classy
-$process:=$🎩.Process.new(1)
+$process:=classy.Process.new(1)
 
 $process.delay(10)
 
