@@ -22,12 +22,14 @@
 			"Communication"
 		],
 		"classes": [
+			"Env",
 			"Process"
 		]
 	},
 	"test": {
 		"methods": [
 			"test_classy",
+			"test_env",
 			"test_request"
 		]
 	},
@@ -37,7 +39,9 @@
 			"catchError",
 			"Compiler_Methods",
 			"Compiler_Variables",
-			"namify"
+			"GET ENVIRONMENT VARIABLE",
+			"namify",
+			"ParseEnv"
 		]
 	},
 	"Wrapper": {

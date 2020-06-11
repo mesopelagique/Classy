@@ -5,6 +5,7 @@
 Classy code using `Class`
 
 - [⚙️ classy.Process](Documentation/Classes/Process.md)
+- [🌎 classy.Env](Documentation/Classes/Env.md)
 - [🚦 classy.Semaphore](Documentation/Classes/Semaphore.md)
 - [🏭 classy.Worker](Documentation/Classes/Worker.md)
 - [📋 classy.Pasteboard](Documentation/Classes/Pasteboard.md)
@@ -15,10 +16,8 @@ Classy code using `Class`
 ## Example
 
 ```4d
-$🎩:=classy 
-$⚙️:=$🎩.Process
-
-$process:=$⚙️.new(1)
+$🎩:=classy
+$process:=$🎩.Process.new(1)
 
 $process.delay(10)
 

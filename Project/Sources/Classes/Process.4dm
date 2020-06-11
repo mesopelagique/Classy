@@ -11,6 +11,7 @@ Class constructor
 		End case 
 	Else 
 		This:C1470.id:=Current process:C322
+		This:C1470.env:=cs:C1710.Env.new()
 	End if 
 	
 /*
