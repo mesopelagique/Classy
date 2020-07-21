@@ -30,6 +30,7 @@
 		"methods": [
 			"test_classy",
 			"test_env",
+			"test_method",
 			"test_request"
 		]
 	},
