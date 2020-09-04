@@ -8,8 +8,9 @@ Class constructor
 	
 Function acquire
 	C_BOOLEAN:C305($0)
+	C_LONGINT:C283($1)
 	If (Count parameters:C259>0)
-		$0:=Semaphore:C143(This:C1470.name;1)
+		$0:=Semaphore:C143(This:C1470.name;$1)
 	Else 
 		$0:=Semaphore:C143(This:C1470.name)
 	End if 
