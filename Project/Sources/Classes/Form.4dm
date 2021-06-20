@@ -39,6 +39,11 @@ Function goToPreviousPage
 Function getCurrentPage()->$pageNumber : Integer
 	$pageNumber:=FORM Get current page:C276
 	
+Function getPageCount()->$numPage : Integer
+	var $name : Text
+	var $width; $height : Integer
+	FORM GET PROPERTIES:C674($name; $width; $height; $numPage)
+	
 	// https://doc.4d.com/4Dv19/4D/19/FORM-GET-OBJECTS.301-5392161.en.html
 Function getObjects()->$objectCollection : Collection
 	$objectCollection:=New collection:C1472
@@ -46,9 +51,6 @@ Function getObjects()->$objectCollection : Collection
 	FORM GET OBJECTS:C898($objects)
 	
 	ARRAY TO COLLECTION:C1563($objectCollection; $objects)
-	
-Function getProperties
-	FORM GET PROPERTIES:C674
 	
 Function getHorizontalResizing()->$result : Object
 	var $resize; $minWidth; $maxWidth : Integer
@@ -83,8 +85,14 @@ Function setVerticalResizing($resize : Integer; $minWidth : Integer; $maxWidth :
 			FORM SET HORIZONTAL RESIZING:C892($resize)
 	End case 
 	
-Function setSize($horizontal : Integer; $vertical : Integer)
-	FORM SET SIZE:C891($horizontal; $vertical)
+Function getSize()->$size : Object
+	var $name : Text
+	var $width; $height : Integer
+	FORM GET PROPERTIES:C674($name; $width; $height)
+	$size:=New object:C1471("width"; $width; "height"; $height)
+	
+Function setSize($width : Integer; $height : Integer)
+	FORM SET SIZE:C891($width; $height)
 	
 /*function load
 FORM LOAD*/
