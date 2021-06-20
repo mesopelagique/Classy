@@ -1,4 +1,4 @@
-﻿# Classy 🎩
+# Classy 🎩
 
 [![language][code-shield]][code-url] [![language-top][code-top]][code-url] ![code-size][code-size] [![release][release-shield]][release-url] [![license][license-shield]][license-url] [![discord][discord-shield]][discord-url]
 
@@ -12,6 +12,7 @@ Classy code using `Class`
 - [🌐 classy.WebArea](Documentation/Classes/WebArea.md)
 - [🖼️ classy.Window](Documentation/Classes/Window.md)
 - [🔤 classy.String](Documentation/Classes/String.md)
+- [🧾 classy.Form](Documentation/Classes/Form.md)
 
 ## Example
 
