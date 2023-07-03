@@ -64,7 +64,7 @@ Function getVerticalResizing()->$result : Object
 	$result:=New object:C1471("resize"; $resize; "minWidth"; $minWidth; "maxWidth"; $maxWidth)
 	
 	// https://doc.4d.com/4Dv19/4D/19/FORM-SET-HORIZONTAL-RESIZING.301-5392167.en.html
-Function setHorizontalResizing($resize : Integer; $minWidth : Integer; $maxWidth : Integer)
+Function setHorizontalResizing($resize : Boolean; $minWidth : Integer; $maxWidth : Integer)
 	Case of 
 		: (Count parameters:C259>2)
 			FORM SET HORIZONTAL RESIZING:C892($resize; $minWidth; $maxWidth)
@@ -75,7 +75,7 @@ Function setHorizontalResizing($resize : Integer; $minWidth : Integer; $maxWidth
 	End case 
 	
 	// https://doc.4d.com/4Dv19/4D/19/FORM-SET-VERTICAL-RESIZING.301-5392160.en.html
-Function setVerticalResizing($resize : Integer; $minWidth : Integer; $maxWidth : Integer)
+Function setVerticalResizing($resize : Boolean; $minWidth : Integer; $maxWidth : Integer)
 	Case of 
 		: (Count parameters:C259>2)
 			FORM SET HORIZONTAL RESIZING:C892($resize; $minWidth; $maxWidth)
